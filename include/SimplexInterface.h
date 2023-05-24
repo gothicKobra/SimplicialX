@@ -27,9 +27,9 @@ public:
     virtual void openStar(vector<int>& word) = 0;
     virtual void closeStar(vector<int>& word) = 0;
     virtual void link(vector<int>& word) = 0;
+    virtual ~SimpInterface() {};
 private:
     SimpInterface() {};
-    virtual ~SimpInterface() {};
     friend class HasseDiagram;
     friend class SimplexTrie;
 };
