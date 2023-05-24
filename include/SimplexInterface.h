@@ -29,6 +29,7 @@ public:
     virtual void link(vector<int>& word) = 0;
 private:
     SimpInterface() {};
+    virtual ~SimpInterface() {};
     friend class HasseDiagram;
     friend class SimplexTrie;
 };
